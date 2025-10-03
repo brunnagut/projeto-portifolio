@@ -95,6 +95,7 @@ section#ficha p {
     line-height: 1.5em;
     margin-bottom: 10px;
     text-align: justify;
+    
 }
 div#social {
   display: flex;
@@ -215,11 +216,16 @@ article h2 {
 }
 
 section#detalhes h3,p {
-   font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
     padding: 20px;
     font-size: 1em;
     line-height: 1.5em;
 
+    font-size: 1em;
+    
+    margin-bottom: 10px;
+    text-align: justify;
+ 
 }
 section#detalhes img.foto {
   display: block;
@@ -228,4 +234,27 @@ section#detalhes img.foto {
   height: auto;       
   max-width: 100%;
   
+}
+
+
+footer {
+    background-color: var(--fundo-card);
+    color:var(--texto);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    font-size: 1em;
+    line-height: 1.5em;
+
+    font-size: 1em;
+    
+    margin-bottom: 5px;
+    text-align: justify;
+
+   
+  border-radius: 4px;
+ 
+}
+footer a:hover {
+    text-decoration: underline;
+    color: var(--destaque);
 }
