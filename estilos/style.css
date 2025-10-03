@@ -70,8 +70,6 @@ section#ficha {
   background-color: var(--fundo-card);
   padding: 20px;
   border-radius: 8px;
-  grid-column: 2;
-
 }
 section#ficha img.foto {
   width: 200px;
@@ -91,6 +89,13 @@ section#ficha h1 {
   font-size: 1.5em;
   text-align: left;
 }
+section#ficha p {
+   font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    line-height: 1.5em;
+    margin-bottom: 10px;
+    text-align: justify;
+}
 div#social {
   display: flex;
   justify-content: center;
@@ -106,9 +111,7 @@ div#social a {
 div#social a:hover {
   color: var(--destaque-inverso);
 }
-section#detalhes {
-  grid-column: 2;
-}
+
 article {
   background-color: var(--fundo-card);
   padding: 20px;
@@ -178,8 +181,51 @@ article h2 {
 
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1024px) {
   #skill-container {
     grid-template-columns: 1fr 1fr;
   }
+  #ficha{
+  grid-column: 2;
+}
+
+#detalhes{
+  grid-column: 2;
+}
+
+}
+@media screen and (min-width: 1024px) {
+
+ main {
+    grid-template-columns:
+      1fr
+      minmax(280px, 360px)
+      minmax(640px, 1fr)
+      1fr;
+  }
+
+#ficha{
+  grid-column: 2;
+}
+
+#detalhes{
+  grid-column: 3;
+}
+
+}
+
+section#detalhes h3,p {
+   font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    font-size: 1em;
+    line-height: 1.5em;
+
+}
+section#detalhes img.foto {
+  display: block;
+    margin: auto;
+     width: 300px;         
+  height: auto;       
+  max-width: 100%;
+  
 }
